@@ -15,7 +15,7 @@ import apackage.Shops;
 import apackage.Store;
 import apackage.Ticket;
 
-public class AllTests {
+public class Tests {
 	
 	
 	@Test
