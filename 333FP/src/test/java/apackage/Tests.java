@@ -23,7 +23,7 @@ public class Tests {
 	public void testCashPay() {
 		Cash cash = new Cash();
 		cash.pay(10.5);
-		assertNotEquals(cash.toString().trim(), "10.5 paid with cash");
+		assertEquals(cash.toString().trim(), "10.5 paid with cash");
 	}
 	
 	
@@ -52,7 +52,7 @@ public class Tests {
 	public void testCCPay() {
 		CreditCard card = new CreditCard(112233);
 		card.pay(22.7);
-		assertNotEquals(card.toString().trim(), "22.7 paid with credit card number 112233");
+		assertEquals(card.toString().trim(), "22.7 paid with credit card number 112233");
 	}
 	
 	@Test
@@ -74,7 +74,7 @@ public class Tests {
 	public void testPayment() {
 		Payment method = new Cash();
 		method.pay(11.11);
-		assertNotEquals(method.toString().trim(), 10);
+		assertEquals(method.toString().trim(), 10);
 	}
 
 	@Test
